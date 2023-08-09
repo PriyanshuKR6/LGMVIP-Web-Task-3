@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="bg-img"></div>
+
+    <h1>Student Enrollment Form</h1>
+
+    <div class="container">
+      <div class="left-container">
+        <form id="form">
+          <label> Name &ensp; &emsp; &ensp; : &ensp;&emsp; </label>
+          <input type="text" class="text-input" id="name" />
+          <br />
+          <br />
+          <label> Email &ensp;&emsp;&emsp;&nbsp; : &ensp;&emsp; </label>
+          <input type="text" class="text-input" id="email" />
+          <br />
+          <br />
+          <label> Website &ensp;&emsp; : &ensp;&emsp; </label>
+          <input type="text" class="text-input" id="website" />
+          <br />
+          <br />
+          <label> Image Link &nbsp; : &ensp;&emsp; </label>
+          <input type="text" class="text-input" id="image-link" />
+          <br />
+          <br />
+          <label> Gender : </label>
+          &emsp;
+          <input
+            id="gender-male"
+            class="select-btn"
+            type="radio"
+            name="gender"
+          />
+          &nbsp; <span class="select-txt"> Male </span>
+          <br />
+          &emsp; &emsp; &emsp; &emsp;&nbsp;&nbsp;
+          <input
+            id="gender-female"
+            class="select-btn"
+            type="radio"
+            name="gender"
+          />
+          &nbsp; <span class="select-txt"> Female </span> <br />
+          <br />
+          <label> Skills : </label>
+          &emsp;
+          <input id="html" class="select-btn" type="checkbox" name="html" />
+          &nbsp; <span class="select-txt"> HTML </span>
+          &emsp;
+          <input id="css" class="select-btn" type="checkbox" name="css" />
+          &nbsp; <span class="select-txt"> CSS </span>
+          &emsp;
+          <input id="js" class="select-btn" type="checkbox" name="javascript" />
+          &nbsp; <span class="select-txt"> Javascript </span>
+          &emsp;
+          <input id="js" class="select-btn" type="checkbox" name="react" />
+          &nbsp; <span class="select-txt"> React </span> <br /><br />
+          <input type="submit" class="submit-btn" onclick="enrollStudent()" />
+        </form>
+      </div>
+
+      <div class="right-container">
+        <h2>Enrolled Students</h2>
+
+        <div class="cards-col" id="cards-col">
+          <div class="card">
+                    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPyGNr2qL63Sfugk2Z1-KBEwMGOfycBribew&usqp=CAU" alt="">
+                    <ul>
+                        <li>Name : <span>John Cena</span> </li>
+                        <li>Email : <span>johncena007@gmail.com</span> </li>
+                        <li>Website : <span>www.johncena.com</span> </li>
+                        <li>Gender : <span>Sigma Male</span> </li>
+                        <li>Skills : <span>HTML CSS</span> </li>
+                    </ul>
+                </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
