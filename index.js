@@ -16,6 +16,7 @@ function enrollStudent() {
   var html = document.getElementById("html");
   var css = document.getElementById("css");
   var js = document.getElementById("js");
+  var react = document.getElementById("react");
 
   if (
     studName.value === "" ||
@@ -85,7 +86,10 @@ function enrollStudent() {
       span5.innerHTML = span5.innerHTML + "CSS  ";
     }
     if (js.checked) {
-      span5.innerHTML = span5.innerHTML + "Javascript";
+      span5.innerHTML = span5.innerHTML + "Javascript  ";
+    }
+    if (react.checked) {
+      span5.innerHTML = span5.innerHTML + "Reactjs";
     }
     ul.appendChild(li);
     li.appendChild(span5);
@@ -99,7 +103,7 @@ function enrollStudent() {
     html.checked = false;
     css.checked = false;
     js.checked = false;
-
+    react.checked = false;
     return true;
   }
 }
